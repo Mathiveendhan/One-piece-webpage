@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One piece</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../one piece webpage/images/backgraound.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 48px; 
+        }
+        p {
+            color: #FFFFFF;
+            font-size: 30px; 
+            text-align: justify; 
+        }
+    </style>
+</head>
+<body>
+    <h1>one piece</h1>
+    <p>"One Piece is a popular Japanese manga and anime series written and illustrated by Eiichiro Oda. 
+        The story follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates, 
+        as they explore the Grand Line in search of the mythical treasure.
+        The series is known for its vibrant characters, exciting battle scenes, stunning visuals,
+        and engaging storylines, making it a must-read for any manga fan.
+        Each character has a different personality and backstory, allowing readers to connect
+        with them in their own way. The series also offers an excellent representation of different
+        cultures in the world, making the story even more engaging and informative.</p>
+    <button onclick="showCharacter('Luffy')">luffy</button>
+    <button onclick="showCharacter('zoro')">zoro</button>
+    <button onclick="showCharacter('nami')">nami</button>
+    <button onclick="showCharacter('sanji')">sanji</button>
+    <button onclick="showCharacter('usopp')">usopp</button>
+    <button onclick="showCharacter('chopper')">chopper </button>
+    <button onclick="showCharacter('robin')">robin</button>
+    <button onclick="showCharacter('franky')">franky</button>
+    <button onclick="showCharacter('jinbe')">jinbe</button>
+    
+    <div id="characterDetails"></div>
+
+    <script>
+        function showCharacter(characterName) {
+            var characterDetails = document.getElementById('characterDetails');
+            if (characterName === 'Luffy') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">luffy</h2><img src="../one piece webpage/images/luffy.jpg" alt="Luufy"><p>Luffy is the main protagonist of the One Piece anime and manga series. He is the captain of the Straw Hat Pirates and is known for his adventurous spirit, determination, and unique abilities. Luffy is the son of Monkey D. Dragon, the leader of the Revolutionary Army, and the grandson of the Marine hero Monkey D. Garp.Luffy character is well-liked by fans due to his likable personality, his ability to push the narrative forward, and his heroic motivation.He is also recognized as one of the worlds most recognizable manga and anime characters</p>';
+            } else if (characterName === 'zoro') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">zoro</h2><img src="../one piece webpage/images/zoro.jpg" alt="zoro"><p>Roronoa Zoro, also known as "Pirate Hunter" Zoro, is a prominent character in the One Piece anime and manga series. He is a highly skilled swordsman and a core member of the Straw Hat Pirates, serving as the crews combatant and one of its two swordsmen. Zoro is characterized by his stern, serious, and focused personality, as well as his unwavering loyalty to his captain, Monkey D. Luffy. He aspires to become the worlds greatest swordsman and is constantly honing his skills through intense training. Zoro is known for his strict code of honor, exceptional strength, and his tendency to maintain a serious demeanor, especially during battles with formidable opponents.</p>';
+            } else if (characterName === 'nami') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">nami</h2><img src="../one piece webpage/images/nami.jpg" alt="nami"><p>"Nami" is a common Japanese word that translates to "wave." However, in the context of the One Piece anime and manga series, Nami is a central character. She is the Straw Hat Pirates navigator, known for her exceptional cartography skills and her ability to forecast weather. Nami is also recognized for her strong-willed and pragmatic nature, as well as her initial role as a thief, which she later abandons to pursue her dream of creating accurate maps of the world. Throughout the series, Namss character undergoes significant development, endearing her to fans and making her an integral part of the crews adventures.</p>';
+            } else if (characterName === 'sanji') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">sanji</h2><img src="../one piece webpage/images/sanji.jpg" alt="sanji"><p>Sanji, also known as "Black Leg Sanji," is a prominent character in the One Piece anime and manga series. He is the cook of the Straw Hat Pirates and one of the crews combatants. Sanji is known for his exceptional fighting skills, which he uses to deliver powerful kicks, and his chivalrous nature, which often leads him to prioritize the safety and well-being of women. He is also recognized for his unique backstory, which involves his family involvement in the Germa 66 organization and his desire to protect his friends and loved ones from harm. According to a recent article on Gamerant, Sanji true strength is underrated, as he possesses immense power and has the ability to regenerate and manifest lightning in his kicks</p>';
+            } else if (characterName === 'usopp') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">usopp</h2><img src="../one piece webpage/images/usopp.jpg" alt="usopp"><p>Usopp, also known as "Sniper King" and "God" Usopp, is a fictional character in the One Piece franchise. He is a member of the Straw Hat Pirates and is known for his role as the crews sniper. Usopp is recognized for his slim build, tan skin, medium-length black curly hair, prominent lips, and his distinctive long nose, which is an allusion to Pinocchio.The character is depicted as having a pessimistic and cowardly personality, often struggling with dangerous adventures and powerful foes, but he consistently summons the courage to stand up and continue on the path of a true warrior.Usopp is also portrayed as a skilled craftsman, capable of creating various weapons and tools, and he is responsible for inventing a range of wacky and useful items for the crew. Despite his initial weaknesses and insecurities, Usopp character development and his contributions to the crew have made him an integral and beloved member of the Straw Hat Pirates.</p>';
+            } else if (characterName === 'chopper') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">chopper</h2><img src="../one piece webpage/images/chopper.jpg" alt="chopper"><p>Tony Tony Chopper is a fictional character in the One Piece anime and manga series. He is a reindeer who ate the Hito Hito no Mi, a Devil Fruit that allows him to transform into a human-reindeer hybrid. Chopper is the doctor of the Straw Hat Pirates and is known for his kind-hearted nature and medical skills. He was taken in by a quack doctor, Dr. Hiriluk, who became his mentor and a father figure in his life. When he becomes sick, Chopper sets out to find a cure for his terminal illness. Chopper finds a mushroom that turns out to be poison after Hiriluk teaches him that the Jolly Roger. Despite his initial weaknesses and insecurities, Chopper character development and his contributions to the crew have made him an integral and beloved member of the Straw Hat Pirates</p>';
+            } else if (characterName === 'robin') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">robin</h2><img src="../one piece webpage/images/robin.jpg" alt="robin"><p>Robin, also known as "Devil Child" Robin, is a fictional character in the One Piece anime and manga series. She is introduced as an antagonist but later becomes the seventh member of the Straw Hat Pirates crew, led by Monkey D. Luffy. Robin is the group archaeologist and historian, known for her intelligence, knowledge of history, and her ability to read Poneglyphs, which are ancient stone tablets with inscriptions about the Void Century, a mysterious and concealed period in the world history. As the only survivor of the island of Ohara, Robin has a tragic past, having endured a tumultuous journey before joining the Straw Hats. She was repeatedly betrayed and unable to trust anyone until Luffy and his crew saved her, showing her the meaning of true friendship and family. Robin is a Devil Fruit user who possesses the power of the Flower-Flower Fruit, allowing her to sprout replicas of her limbs, and later her entire body, from any surface. Throughout the series, Robin character has evolved, and she is dedicated to helping Luffy achieve his goal of becoming the Pirate King while seeking to uncover the true history of the world, fulfilling her own dream</p>';
+            } else if (characterName === 'franky') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733">franky</h2><img src="../one piece webpage/images/franky.jpg" alt="franky"><p>Franky, also known as "Iron Man" Franky, is a significant character in the One Piece anime and manga series. He is the shipwright of the Straw Hat Pirates and their eighth member. Franky is a 36-year-old cyborg with superhuman strength, speed, and durability. He can swim faster than normal humans and is known for his flamboyant attitude and signature "SUPER" catchphrase. Frankys dream is to build a ship that can travel to the end of the Grand Line, which is the ship that the Straw Hats are currently riding. He is quick to defend his friends and is seen as a "big brother" figure due to his protective nature. Franky past is marked by tragedy, including the loss of his mentor and his transformation into a cyborg after a near-fatal accident. He is a skilled shipwright, having spent most of his youth as an apprentice with Toms Workers, and is intensely devoted to his trade. Franky character has evolved throughout the series, and he has found a family and a home with the Straw Hat crew after enduring significant hardships </p>';
+            } else if (characterName === 'jinbe') {
+                characterDetails.innerHTML = '<h2 style="color: #FF5733"> jinbe</h2><img src="../one piece webpage/images/jimbe.jpg" alt="jinbe"><p>Jinbe, also known as "Knight of the Sea" Jinbe, is a significant character in the One Piece anime and manga series. He is a fish-man of great pride and honor, known for his loyalty and his role as a powerful master of Fish-Man Karate. Jinbe has a unique bond with the protagonist, Luffy, and is considered the most important crew member in Luffy life, having supported him during his lowest moments Jinbe official spelling is "Jinbe," although "Jimbei" and "Jinbei" have also been used in the past. He is highly respected by pirates and is recognized as the strongest Fishman and a former Warlord.</p>';
+            }
+        }
+    </script>
+</body>
+</html>

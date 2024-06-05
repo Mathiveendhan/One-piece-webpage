@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+         body {
+      background-image: url("../one piece webpage/images/login_image1.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:  1950px 1000px;
+         }
+        .container {
+            width: 30%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #adaaaa;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(203, 114, 114, 0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <a href="one piece.html"><input type="button" value="Login"></a>
+        </form>
+    </div>
+</body>
+</html>
